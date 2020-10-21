@@ -8,7 +8,7 @@ export TEST_FILE=data/"${EXPERIMENT_TYPE}"/test.jsonl
 export OUTPUT_DIR="output/${EXPERIMENT_TYPE}"
 mkdir -p "output/${EXPERIMENT_TYPE}"
 
-CUDA_VISIBLE_DEVICES="$2" python run_trackworld.py \
+CUDA_VISIBLE_DEVICES="$2" python run_wiqa.py \
     --output_dir="${OUTPUT_DIR}"\
     --model_type=gpt2 \
     --model_name_or_path=gpt2-medium \

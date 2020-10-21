@@ -19,8 +19,6 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 
-# model_config, model_class, tokenizer_class = (run_trackworld.)MODEL_CLASSES[args.model_type] e.g, "gpt2"
-# model = model_class.from_pretrained(args.model_name_or_path)
 def generate(args, model, tokenizer, input_fp, output_fp):
     logger.info(f"Generating open state changes for input file: {input_fp} ...")
     ensure_path(output_fp)

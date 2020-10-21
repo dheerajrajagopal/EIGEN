@@ -2,38 +2,9 @@
 
 Generating what-if graphs from text
 
-## Training Data Creation
+## Training Data 
 
-To create training data that can be used for training GPT-2, run the following command:
-
-```sh
-python src/data/creation/influence_graph.py\
-        --add_start_end True\
-        --add_reversed True\
-        --add_entire_path False\
-        --add_paragraph True\
-        --path_to_qa data/qa\
-        --para-at-end False\
-        --reln-in-middle False\
-        --simple-generation True\
-        --outpath tmp/\
-        --path_to_influence_graphs data/qa/wiqa_influence_graphs.jsonl
-```
-
-Options:
-
-```stl
-    --add_start_end=<BOOL>                  Whether to add examples that use start and end node
-    --add_reversed=<BOOL>                   Should the nodes be reversed and added as training examples?
-    --add_entire_path=<BOOL>                Add the entire path
-    --add_paragraph=<BOOL>                  Should the paragraph be added to the src sentence?
-    --para-at-end=<BOOL>                    Should the paragraph be added at the end?
-    --reln-in-middle=<BOOL>                 If true, the relation is added to the middle (PARA-RELN-NODE)
-    --simple-generation=<BOOL>              If true, the generations are in simpler format (PARA - RELN - NODE) without any keywords
-    --path_to_qa=<str>                      Path to the directory that has qa files. This is used to create the train/test/dev splits
-    --outpath=<str>                         Path where the output should be written
-    --path_to_influence_graphs=<str>        Path to the influence graphs jsonl file
-```
+The training data can be downloaded [here](https://drive.google.com/file/d/175KkddHpWTovpZ1LyLiAFsgazQfWYvK-/view?usp=sharing)
 
 ## Training
 
@@ -71,6 +42,8 @@ python src/eval/generate.py --model-path output/wiqa-grammar-low-lr/checkpoint-1
 }
 ```
 
+
+The QA dataset files are based on [WIQA](https://allenai.org/data/wiqa) dataset.
 
 ## Context Generation (For Training QA)
 
