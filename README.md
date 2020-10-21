@@ -1,4 +1,4 @@
-# WIQA gen models
+# EIGEN models
 
 Generating what-if graphs from text
 
