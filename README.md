@@ -1,6 +1,6 @@
-# EIGEN models
+# CURIE 
 
-Generating what-if graphs from text
+Generating situational graphs from text
 
 ## Training Data 
 

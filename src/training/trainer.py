@@ -20,7 +20,6 @@ from transformers import PreTrainedModel, PreTrainedTokenizer, AdamW, get_linear
 def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedTokenizer) -> Tuple[int, float]:
     """ Train the model """
     if args.local_rank in [-1, 0]:
-        # Niket: this doesn't work for Beaker because the output directory for logging "runs" is not created.
         # tb_writer = SummaryWriter()
         tb_writer = SummaryWriter(log_dir=os.path.join(args.output_dir, "log", "train"))
 
