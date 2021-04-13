@@ -4,7 +4,7 @@ Generating what-if graphs from text
 
 ## Training Data 
 
-The training data can be downloaded [here](https://drive.google.com/file/d/175KkddHpWTovpZ1LyLiAFsgazQfWYvK-/view?usp=sharing)
+The training data can be downloaded [here](https://drive.google.com/file/d/1z0du5uQjZbb9Hv0fpuPl3X_zQGUKC5Jy/view?usp=sharing)
 
 ## Training
 
