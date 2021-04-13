@@ -1,6 +1,6 @@
 # CURIE 
 
-Generating situational graphs from text
+Generating situational graphs from text (https://arxiv.org/abs/2104.00814)
 
 ## Training Data 
 
